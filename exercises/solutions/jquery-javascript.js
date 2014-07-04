@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-    /* Using jQuery to reference the elements by class, 
+    /* Using jQuery to reference the elements by class,
       adding a click event and passing the function on click */
-    
+
     // Referencing the button with the 'add' class
     $(".add").click(function(){
         //call the appropriate function
@@ -18,23 +18,23 @@ $(document).ready(function(){
     });
 
 
-    // Start quantity at 0 
-    var quantity = 0; 
+    // Start quantity at 0
+    var quantity = 0;
 
     // JavaScript functions
-    function addItem(){ 
+    function addItem(){
       quantity = quantity + 1;
       refreshTotal();
     }
 
     function removeItem(){
       if ( quantity > 0 ) {
-        quantity = quantity - 1; 
+        quantity = quantity - 1;
       } else {
         // do nothing
       }
       refreshTotal();
-    }  
+    }
 
     function checkout() {
       if ( quantity <= 0 ) {
@@ -42,10 +42,10 @@ $(document).ready(function(){
       } else {
         alert( "Thank you for your order!" );
       }
-    } 
+    }
 
-    function refreshTotal() {       
-      // calculate the totalCost with a fixed price of $20.  
+    function refreshTotal() {
+      // calculate the totalCost with a fixed price of $20.
       var totalCost = quantity * 20;
       // then update the quantity text field
       document.getElementById('updateQuantity').value = quantity;
@@ -56,5 +56,5 @@ $(document).ready(function(){
 });//closes the document.ready
 
 
-  
+
 

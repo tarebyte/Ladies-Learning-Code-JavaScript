@@ -1,38 +1,38 @@
 <script>
 
-  var quantity = 0;   
+  var quantity = 0;
 
-  function addItem(){ 
+  function addItem(){
     quantity = quantity + 1;
     refreshTotal();
   }
-  
+
   function removeItem(){
-    /* 1. Use a conditional if or if/else statement on the "quantity" variable 
+    /* 1. Use a conditional if or if/else statement on the "quantity" variable
           to avoid having negative products. */
     /* *** YOUR CODE _BELOW_ HERE **** */
 
-    quantity = quantity - 1; 
+    quantity = quantity - 1;
 
     /* *** YOUR CODE ^ABOVE^ HERE **** */
     refreshTotal();
-  }  
+  }
 
   function checkout() {
-    /* 2. Use a conditional if/else statement on the "quantity" variable 
+    /* 2. Use a conditional if/else statement on the "quantity" variable
           to determine if the shopping cart is (or is not) empty, then
           show the correct popup message. */
     /* *** YOUR CODE _BELOW_ HERE **** */
 
     alert( "Sorry, you don't have anything in your cart!" );
     alert( "Thank you for your order!" );
-    
-    /* *** YOUR CODE ^ABOVE^ HERE **** */
-  } 
-  
-  function refreshTotal() {       
 
-    // calculate the totalCost with a fixed price of $20.  
+    /* *** YOUR CODE ^ABOVE^ HERE **** */
+  }
+
+  function refreshTotal() {
+
+    // calculate the totalCost with a fixed price of $20.
     var totalCost = quantity * 20;
 
     // then update the quantity text field
@@ -49,7 +49,7 @@
 </script>
 
 <div id="exercise2" style="text-align: center;">
-  <img src="http://brennaobrien.com/LLC-JavaScript/exercises/assets/plush-android.jpg" width="195" height="195" />
+  <img src="http://marktareshawty.com/Ladies-Learning-Code-JavaScript/exercises/assets/plush-android.jpg" width="195" height="195" />
   <br />
   <button onclick="addItem();">Add</button>
   <button onclick="removeItem();">Remove</button>
