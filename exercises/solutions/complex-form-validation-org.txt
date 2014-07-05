@@ -8,14 +8,14 @@ function validateForm() {
   var postal = document.getElementById("postal").value;
 
   /* *** YOUR CODE _BELOW_ HERE **** */
-  
-  /* 1. Use a conditional if/else statement to test for 
-  blank fields and alert the proper message. 
+
+  /* 1. Use a conditional if/else statement to test for
+  blank fields and alert the proper message.
   Below are some alerts you can use. */
 
   alert( "Sorry there are errors. Form fields cannot be blank!" );
   alert( "Thank you for your order!" );
-  
+
 
   /* *** YOUR CODE ^ABOVE^ HERE **** */
 }

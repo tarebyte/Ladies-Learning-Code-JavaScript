@@ -16,7 +16,7 @@
   discountAmount = subTotal * discountPercentage / 100;
   document.write("Discount Amount: " + discountAmount);
   document.write("<br />");
-  
+
   /* 3. Apply the discount to get the final price. */
   var finalTotal;
   finalTotal = subTotal - discountAmount;

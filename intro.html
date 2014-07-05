@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="src/css/deck.coder.css">
   <link rel="stylesheet" href="src/codemirror/lib/codemirror.css">
   <link rel="stylesheet" href="src/codemirror/theme/default.css">
+  <link rel="stylesheet" href="src/css/custom.css">
+  <link rel="stylesheet" href="src/octicons/octicons.css">
+  <link rel="stylesheet" href="src/ss-social-circle/webfonts/ss-social-circle.css">
 
   <!-- Custom for LLC -->
   <link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
@@ -24,43 +27,66 @@
 </head>
 
 <body class="deck-container">
-	<script type='text/coderdeck' id='coderdeck-default'>
-	  <html>
-	    <head>
-	      <script src='src/jquery.min.js'>SCRIPTEND</head>
-	    <body>CODE</body>
-	  </html>
-	  </script>
-	
-	  <script type='text/coderdeck' id='coderdeck-style-example'>
-	  <html>
-	    <title>test</title>
-	    <style>CODE</style>
-	    <body>
-	      <h1>I'm a H1 heading</h1>
-	      <h2>I'm a H2 heading</h2>
-	      <p>Pargraph of text &lt;p&gt; here</p>
-	      <div class='stuff'>I'm a div &lt;div&gt; with class "stuff"</div>
-	      <div id='my-div'>I'm a &lt;div&gt; with id "my-div"</div>
-	    </body>
-	  </html>
-	</script>
-	
+  <script type='text/coderdeck' id='coderdeck-default'>
+    <html>
+      <head>
+        <script src='src/jquery.min.js'>SCRIPTEND</head>
+      <body>CODE</body>
+    </html>
+    </script>
+
+    <script type='text/coderdeck' id='coderdeck-style-example'>
+    <html>
+      <title>test</title>
+      <style>CODE</style>
+      <body>
+        <h1>I'm a H1 heading</h1>
+        <h2>I'm a H2 heading</h2>
+        <p>Pargraph of text &lt;p&gt; here</p>
+        <div class='stuff'>I'm a div &lt;div&gt; with class "stuff"</div>
+        <div id='my-div'>I'm a &lt;div&gt; with id "my-div"</div>
+      </body>
+    </html>
+  </script>
+
   <div id="presentation">
-  <!-- **************************************** -->  
+  <!-- **************************************** -->
 
     <!-- SLIDE: Workshop intro -->
     <article class='slide slide-title intro'>
       <h1>Introduction to JavaScript</h1>
-  
+
       <div class="instructor_holder">
         <h2>Your instructor today</h2>
-        
-      
-        <h4></h4>
-        <p><a href="mailto:hi@brennaobrien.com"></a><br />
-        <a href="http://brennaobrien.com" target="_blank"></a><br />
-        <a href="http://twitter.com/brenanob" target="_blank"></a></p>
+
+          <img src="http://www.gravatar.com/avatar/ce0b3aaf2cb23c057b70d73dc951d3e3.png?s=200" width="120px">
+          <h2>Mark Tareshawty</h2>
+          <ul class="instructor-links">
+            <li>
+              <a class="instructor-info" href="mailto:mark.tareshawty@shopify.com">
+                <span class="mega-octicon octicon-mail"></span>
+                mark.tareshawty@shopify.com
+              </a>
+            </li>
+            <li>
+              <a href="http://marktareshawty.com" target="_blank">
+                <span class="mega-octicon octicon-globe"></span>
+                http://marktareshawty.com
+              </a>
+            </li>
+            <li>
+              <a href="http://twitter.com/tarebyte" target="_blank">
+                <i class="ss-icon ss-twitter"></i>
+                @tarebyte
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/tarebyte" target="_blank">
+                <span class="mega-octicon octicon-mark-github"></span>
+                tarebyte
+              </a>
+            </li>
+          </ul>
         <br>
         <p>(Interactive code slides thanks to <a href="http://cykod.github.com/CoderDeck/" target="_blank" style="color: #999;">CoderDeck</a>!)</p>
       </div>
@@ -73,6 +99,7 @@
       <ul>
         <li><a href="tech_overview.html">Development Environment: tools you need to get started</a></li>
         <li><a href="tech_overview.html#slide-4">Technology Overview: Programming and JavaScript</a></li>
+        <li><a href="fun_examples.html">Cool JavaScript Projects</a></li>
         <li><a href="js_quick_start.html">Part 1: Getting started with variables and operators</a></li>
         <li><a href="js_functions.html">Part 2: Functions</a></li>
       </ul>
@@ -94,8 +121,8 @@
     <article class='slide slide-list'>
       <p class="centered vertically_centered"><a href="tech_overview.html"><img src="assets/next_section_icon.gif" width="230" height="70" alt="Click to go to next section" /></a></p>
     </article>
-  
-  <!-- **************************************** -->  
+
+  <!-- **************************************** -->
   </div>
   <!-- END div id=presentation -->
 

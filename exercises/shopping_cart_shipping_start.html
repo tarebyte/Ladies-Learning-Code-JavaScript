@@ -1,79 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Planet Robot - Shipping</title>
-  <link href='http://fonts.googleapis.com/css?family=Fascinate|Titan+One' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="http://brennaobrien.com/LLC-JavaScript/exercises/shopping-cart.css" type="text/css" media="screen" />
-  <style>
-  /* Override the styles in the final CSS file */
-  #additionalInfo {
-    float: none;
-    overflow: auto;
-    margin: 10px;
-  } 
-  </style>
+  <head>
+    <title>Planet Robot - Shipping</title>
+    <link href='http://fonts.googleapis.com/css?family=Fascinate|Titan+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://marktareshawty.com/Ladies-Learning-Code-JavaScript/exercises/shopping-cart.css" type="text/css" media="screen" />
+    <style>
+      /* Override the styles in the final CSS file */
+    #additionalInfo {
+      float: none;
+      overflow: auto;
+      margin: 10px;
+    }
+    </style>
 
-  <script type="text/javascript">
+    <script type="text/javascript">
 
-    function validateForm() {
+      function validateForm() {
 
-      // automagically get the typed values from the billing area of form
-      var billingName = document.getElementById("billing_name").value;
-      var billingAddress = document.getElementById("billing_address").value;
-      var billingCity = document.getElementById("billing_city").value;
-      var billingPostal = document.getElementById("billing_postal").value;
+        // automagically get the typed values from the billing area of form
+        var billingName = document.getElementById("billing_name").value;
+        var billingAddress = document.getElementById("billing_address").value;
+        var billingCity = document.getElementById("billing_city").value;
+        var billingPostal = document.getElementById("billing_postal").value;
 
-      // automagically get the typed values from the shipping area of form
-      var shippingName = document.getElementById("shipping_name").value;
-      var shippingAddress = document.getElementById("shipping_address").value;
-      var shippingCity = document.getElementById("shipping_city").value;
-      var shippingPostal = document.getElementById("shipping_postal").value;
+        // automagically get the typed values from the shipping area of form
+        var shippingName = document.getElementById("shipping_name").value;
+        var shippingAddress = document.getElementById("shipping_address").value;
+        var shippingCity = document.getElementById("shipping_city").value;
+        var shippingPostal = document.getElementById("shipping_postal").value;
 
-      // automagically get the checkbox value (true or false) from the form
-      var sameAsBillingChecked = document.getElementById("same_as_billing").checked;
+        // automagically get the checkbox value (true or false) from the form
+        var sameAsBillingChecked = document.getElementById("same_as_billing").checked;
 
-/* *** YOUR CODE _BELOW_ HERE **** */
+        /* *** YOUR CODE _BELOW_ HERE **** */
 
       // variables to keep track of which section is blank
-      var billingHasEmptyFields = false;
-      var shippingHasEmptyFields = false;
+        var billingHasEmptyFields = false;
+        var shippingHasEmptyFields = false;
 
-      /* 1. Re-write this block of code ( up to the ^^^ ) as a function caled "verifyBillingAddress"
+        /* 1. Re-write this block of code ( up to the ^^^ ) as a function caled "verifyBillingAddress"
             with 4 parameters: name, address, city, and postal.
             That way, you can use it to determine if all billing fields are not blank. */
       if ( billingName == "" ) {
         billingHasEmptyFields = true;
       }
-      if ( billingAddress == "" ) {
-        billingHasEmptyFields = true;
-      }
-      if ( billingCity == "" ) {
-        billingHasEmptyFields = true;
-      }
-      if ( billingPostal == "" ) {
-        billingHasEmptyFields = true;
-      }
-      // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        if ( billingAddress == "" ) {
+          billingHasEmptyFields = true;
+        }
+        if ( billingCity == "" ) {
+          billingHasEmptyFields = true;
+        }
+        if ( billingPostal == "" ) {
+          billingHasEmptyFields = true;
+        }
+        // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
       //So that you can instead use:
-      billingHasEmptyFields = verifyBillingAddress( billingName, billingAddress, billingCity, billingPostal );
+        billingHasEmptyFields = verifyBillingAddress( billingName, billingAddress, billingCity, billingPostal );
 
 
-      if ( sameAsBillingChecked == false ) {
-        /* 2. Use the new verifyBillingAddress() created 
+        if ( sameAsBillingChecked == false ) {
+          /* 2. Use the new verifyBillingAddress() created
               to find out if shippingHasEmptyFields should be true or false */
         shippingHasEmptyFields = verifyBillingAddress( shippingName, shippingAddress, shippingCity, shippingPostal );
-      }else{
-        //set shippingOk to true since it doesn't matter what's in there
-        shippingHasEmptyFields = false;
-      }
-      
+        }else{
+          //set shippingOk to true since it doesn't matter what's in there
+          shippingHasEmptyFields = false;
+        }
+
       // alert the proper message
       if ( billingHasEmptyFields || shippingHasEmptyFields ) {
-        alert( "Sorry there are errors. Form fields cannot be blank!" );     
+        alert( "Sorry there are errors. Form fields cannot be blank!" );
       }else{
         alert( "Thank you for your order!" );
       }
-      
+
     }
 
     function verifyBillingAddress(){
@@ -87,7 +87,7 @@
 
     function disableShipping(){
       if ( document.getElementById("same_as_billing").checked ) {
-        // if the "same as billing" checkbox is checked off, 
+        // if the "same as billing" checkbox is checked off,
         // grey out & make all the shipping fields read only
         document.getElementById("shipping_name").setAttribute("readonly","readonly");
         document.getElementById("shipping_address").setAttribute("readonly","readonly");
@@ -104,10 +104,10 @@
         // return text labels to black
         document.getElementById("shippingInfo").removeAttribute("class");
       }
-      
+
     }
 
-  </script>
+    </script>
 
   </head>
 
@@ -148,7 +148,7 @@
         <label for="shipping_city">City</label>
         <input type="text" id="shipping_city" />
         <br />
-        <label for="shipping_postal">Postal Code</label> 
+        <label for="shipping_postal">Postal Code</label>
         <input type="text" id="shipping_postal" />
 
       </fieldset>
@@ -157,5 +157,5 @@
 
     </div>
 
-</body>
+  </body>
 </html>
